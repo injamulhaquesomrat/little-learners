@@ -1,16 +1,9 @@
 import { cn } from "@/lib/utils";
 import { Link, NavLink } from "react-router";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -67,7 +60,7 @@ const Navbar = () => {
         {/* start::mobile menus */}
         <Sheet>
           <SheetTrigger asChild>
-            <div className="lg:hidden px-[30px] py-[17px] border-l-[2px] bg-secondary-background cursor-pointer">
+            <div className="lg:hidden px-[17px] md:px-[30px] py-[17px] border-l-[2px] bg-secondary-background cursor-pointer">
               <svg
                 width="28"
                 height="28"
@@ -86,7 +79,7 @@ const Navbar = () => {
           </SheetTrigger>
           <SheetContent className="w-full border">
             <SheetHeader>
-              <div className="px-5 py-4 3xl:py-5 3xl:px-6 bg-main w-fit rounded-xl">
+              <div className="px-5 py-4 3xl:py-5 3xl:px-6 bg-main w-fit rounded-xl mt-4">
                 <Link to={"/"} className="focus-visible:outline-0">
                   <img
                     className="hidden 3xl:block"
