@@ -54,10 +54,10 @@
   --color-overlay: var(--overlay);
   --color-ring: var(--ring);
 
-  --spacing-boxShadowX: 4px;
-  --spacing-boxShadowY: 4px;
-  --spacing-reverseBoxShadowX: -4px;
-  --spacing-reverseBoxShadowY: -4px;
+  --spacing-boxShadowX: 6px;
+  --spacing-boxShadowY: 6px;
+  --spacing-reverseBoxShadowX: -6px;
+  --spacing-reverseBoxShadowY: -6px;
   --radius-base: 5px;
   --shadow-shadow: var(--shadow);
 

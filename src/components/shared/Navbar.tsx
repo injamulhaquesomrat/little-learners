@@ -17,7 +17,7 @@ import {
 const Navbar = () => {
   return (
     <div className="pt-10 px-4 2xl:px-0">
-      <div className="flex justify-between items-center container 2xl:w-[1339px] 3xl:w-[1819px] mx-auto border-[2px] rounded-xl overflow-hidden">
+      <div className="flex justify-between items-center container 2xl:w-[1339px] 3xl:w-[1819px] mx-auto border-[2px] rounded-xl overflow-hidden bg-white">
         {/* start::logo */}
         <div className="px-5 py-4 3xl:py-5 3xl:px-6 bg-main border-r-[2px] flex justify-center items-center">
           <Link to={"/"} className="focus-visible:outline-0">
@@ -47,7 +47,7 @@ const Navbar = () => {
               to={item?.src}
               className={({ isActive }: { isActive: boolean }) =>
                 cn(
-                  "lg:py-[21px] 3xl:py-[25px] lg:px-[30px] 3xl:px-[34px] border-l-[2px] 3xl:text-xl hover:bg-foreground",
+                  "lg:py-[21px] 3xl:py-[25px] lg:px-[30px] 3xl:px-[34px] border-l-[2px] 3xl:text-xl hover:bg-foreground transition-all duration-500 ease-in-out",
                   isActive ? "bg-secondary-background" : ""
                 )
               }
@@ -57,7 +57,7 @@ const Navbar = () => {
           ))}
           <NavLink
             to={"/contact"}
-            className="lg:py-[21px] xl:py-[25px] lg:px-[30px] xl:px-[34px] border-l-[2px] xl:text-xl bg-[var(--orange-75)]"
+            className="lg:py-[21px] 3xl:py-[25px] lg:px-[30px] 3xl:px-[34px] border-l-[2px] 3xl:text-xl bg-[var(--orange-75)]"
           >
             Contact
           </NavLink>
@@ -84,13 +84,27 @@ const Navbar = () => {
               </svg>
             </div>
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className="w-full border">
             <SheetHeader>
-              <SheetTitle>Edit profile</SheetTitle>
-              <SheetDescription>
-                Make changes to your profile here. Click save when you&apos;re
-                done.
-              </SheetDescription>
+              <div className="px-5 py-4 3xl:py-5 3xl:px-6 bg-main w-fit rounded-xl">
+                <Link to={"/"} className="focus-visible:outline-0">
+                  <img
+                    className="hidden 3xl:block"
+                    src="/assets/desktop-logo.png"
+                    alt="desktop logo"
+                  />
+                  <img
+                    className="hidden lg:block 3xl:hidden"
+                    src="/assets/laptop-logo.png"
+                    alt="laptop logo"
+                  />
+                  <img
+                    className="lg:hidden"
+                    src="/assets/mobile-logo.png"
+                    alt="mobile logo"
+                  />
+                </Link>
+              </div>
             </SheetHeader>
             <div className="flex flex-col font-medium">
               {navbarItems.slice(0, 5).map((item) => (
@@ -98,7 +112,7 @@ const Navbar = () => {
                   to={item?.src}
                   className={({ isActive }: { isActive: boolean }) =>
                     cn(
-                      "lg:py-[21px] 3xl:py-[25px] lg:px-[30px] 3xl:px-[34px] border-l-[2px] 3xl:text-xl hover:bg-foreground",
+                      "py-[21px] 3xl:py-[25px] px-[30px] 3xl:px-[34px] border-[2px] 3xl:text-xl hover:bg-foreground",
                       isActive ? "bg-secondary-background" : ""
                     )
                   }
@@ -108,17 +122,11 @@ const Navbar = () => {
               ))}
               <NavLink
                 to={"/contact"}
-                className="lg:py-[21px] xl:py-[25px] lg:px-[30px] xl:px-[34px] border-l-[2px] xl:text-xl bg-[var(--orange-75)]"
+                className="py-[21px] 3xl:py-[25px] px-[30px] 3xl:px-[34px] border-[2px] 3xl:text-xl hover:bg-foreground bg-[var(--orange-75)]"
               >
                 Contact
               </NavLink>
             </div>
-            <SheetFooter>
-              <Button type="submit">Save changes</Button>
-              <SheetClose asChild>
-                <Button variant="neutral">Close</Button>
-              </SheetClose>
-            </SheetFooter>
           </SheetContent>
         </Sheet>
         {/* end::mobile menus */}
