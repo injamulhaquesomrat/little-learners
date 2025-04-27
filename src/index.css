@@ -66,5 +66,6 @@
   --font-weight-base: 500;
   --font-weight-heading: 700;
 
+  --breakpoint-2xl: 90rem;
   --breakpoint-3xl: 120rem;
 }
