@@ -1,7 +1,7 @@
 import { Button } from "./components/ui/button";
 
 function App() {
-  // const [count, setCount] = useState(0);
+  // description:: A vibrant online platform designed to make early education fun and engaging. Providing interactive lessons, educational games, and creative resources to inspire young minds and support teachers and parents in shaping bright futures.
 
   return (
     <>
