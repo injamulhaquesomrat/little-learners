@@ -1,10 +1,5 @@
 import Container from "@/components/shared/Container";
-// import {
-//   Accordion,
-//   AccordionContent,
-//   AccordionItem,
-//   AccordionTrigger,
-// } from "@/components/ui/accordion";
+// import { 
 
 const About = () => {
   return (
