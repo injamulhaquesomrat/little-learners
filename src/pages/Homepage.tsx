@@ -1,9 +1,10 @@
+import Hero from "@/components/Homepage/Hero";
 import Container from "@/components/shared/Container";
 
 const Homepage = () => {
   return (
     <Container>
-      <h2>Homepage</h2>
+      <Hero />
     </Container>
   );
 };
