@@ -157,7 +157,7 @@ const Navbar = () => {
               ))}
               <NavLink
                 to={"/contact"}
-                className="py-[21px] 3xl:py-[25px] px-5 3xl:px-[34px] 3xl:text-xl hover:bg-foreground bg-[var(--orange-75)]"
+                className="py-[21px] 3xl:py-[25px] px-5 3xl:px-[34px] 3xl:text-xl bg-[var(--orange-75)]"
               >
                 Contact
               </NavLink>
