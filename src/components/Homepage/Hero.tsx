@@ -1,3 +1,5 @@
+import CountUp from "react-countup";
+
 const Hero = () => {
   return (
     <section className="w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-5 xl:gap-10 2xl:gap-[50px] 3xl:gap-[60px] pb-20 xl:pb-[150px] 3xl:pb-[200px]">
@@ -30,21 +32,39 @@ const Hero = () => {
         <div className="p-10 lg:p-5 xl:p-10 3xl:px-[50px] 3xl:py-6 border-[2px] rounded-xl grid sm:grid-cols-3 md:gap-2.5 gap-y-5 bg-secondary-background shadow-secondary-shadow">
           <div>
             <h3 className="text-gray-15 text-[34px] lg:text-3xl xl:text-[34px] font-extrabold">
-              +7000
+              <CountUp
+                start={0}
+                end={7000}
+                duration={5}
+                decimals={0}
+                prefix="+"
+              />
             </h3>
             <p className="font-medium text-grey-15">Students Passed Out</p>
           </div>
           <hr className="sm:hidden border-b" />
           <div>
             <h3 className="text-gray-15 text-[34px] lg:text-3xl xl:text-[34px] font-extrabold">
-              +37
+              <CountUp
+                start={0}
+                end={37}
+                duration={5}
+                decimals={0}
+                prefix="+"
+              />
             </h3>
             <p className="font-medium text-grey-15">Awards & Recognitions</p>
           </div>
           <hr className="sm:hidden border-b" />
           <div>
             <h3 className="text-gray-15 text-[34px] lg:text-3xl xl:text-[34px] font-extrabold">
-              +15
+              <CountUp
+                start={0}
+                end={15}
+                duration={5}
+                decimals={0}
+                prefix="+"
+              />
             </h3>
             <p className="font-medium text-grey-15">Experience Educators</p>
           </div>
