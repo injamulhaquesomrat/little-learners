@@ -13,7 +13,7 @@
   --ring: oklch(0.21 0 0);
   --overlay: oklch(0.46 0.0016 286.34);
   --shadow: 6px 6px 0px 0px var(--border);
-  --orange-shadow: 6px 6px 0px 0px var(--orange-75);
+  --secondary-shadow: 6px 6px 0px 0px var(--orange-80);
 
   --orange-65: oklch(0.76 0.1579 48.58); /* #FF8E4D */
   --orange-70: oklch(0.79 0.1362 49.8); /*#FF9E66*/
@@ -60,6 +60,7 @@
   --spacing-reverseBoxShadowY: -6px;
   --radius-base: 5px;
   --shadow-shadow: var(--shadow);
+  --shadow-secondary-shadow: var(--secondary-shadow);
 
   --font-raleway: "Raleway", sans-serif;
   --font-outfit: "Outfit", sans-serif;
