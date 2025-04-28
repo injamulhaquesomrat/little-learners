@@ -1,4 +1,4 @@
-import Benefits from "@/components/Homepage/Benefits";
+import Benefits from "@/components/Homepage/Benefits/Benefits";
 import Hero from "@/components/Homepage/Hero";
 import Container from "@/components/shared/Container";
 
@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
     <Container>
       <Hero />
-      <Benefits/>
+      <Benefits />
     </Container>
   );
 };

@@ -1,3 +1,5 @@
+import { hallOfFame } from "@/fakedata/hallOfFame";
+import { cn } from "@/lib/utils";
 import CountUp from "react-countup";
 
 const Hero = () => {
@@ -29,46 +31,30 @@ const Hero = () => {
             Join us as we embark on an exciting educational journey together!
           </p>
         </div>
-        <div className="p-10 lg:p-5 xl:p-10 3xl:px-[50px] 3xl:py-6 border-[2px] rounded-xl grid sm:grid-cols-3 md:gap-2.5 gap-y-5 bg-secondary-background shadow-secondary-shadow">
-          <div>
-            <h3 className="text-gray-15 text-[34px] lg:text-3xl xl:text-[34px] font-extrabold">
-              <CountUp
-                start={0}
-                end={7000}
-                duration={5}
-                decimals={0}
-                prefix="+"
+
+        {/* start::hall of fame counter */}
+        <div className="p-10 lg:p-5 xl:p-10 3xl:px-[50px] 3xl:py-6 border-2 rounded-xl grid sm:grid-cols-3 md:gap-2.5 gap-y-5 bg-secondary-background shadow-secondary-shadow">
+          {hallOfFame.map((item) => (
+            <>
+              <div key={item?.id}>
+                <h3 className="text-gray-15 text-[34px] lg:text-3xl xl:text-[34px] font-extrabold leading-[1.5]">
+                  <CountUp
+                    start={0}
+                    end={item?.count}
+                    duration={5}
+                    decimals={0}
+                    prefix="+"
+                  />
+                </h3>
+                <p className="font-medium text-grey-15">{item?.subject}</p>
+              </div>
+              <hr
+                className={cn(`sm:hidden border-b`, item?.id === 3 && "hidden")}
               />
-            </h3>
-            <p className="font-medium text-grey-15">Students Passed Out</p>
-          </div>
-          <hr className="sm:hidden border-b" />
-          <div>
-            <h3 className="text-gray-15 text-[34px] lg:text-3xl xl:text-[34px] font-extrabold">
-              <CountUp
-                start={0}
-                end={37}
-                duration={5}
-                decimals={0}
-                prefix="+"
-              />
-            </h3>
-            <p className="font-medium text-grey-15">Awards & Recognitions</p>
-          </div>
-          <hr className="sm:hidden border-b" />
-          <div>
-            <h3 className="text-gray-15 text-[34px] lg:text-3xl xl:text-[34px] font-extrabold">
-              <CountUp
-                start={0}
-                end={15}
-                duration={5}
-                decimals={0}
-                prefix="+"
-              />
-            </h3>
-            <p className="font-medium text-grey-15">Experience Educators</p>
-          </div>
+            </>
+          ))}
         </div>
+        {/* end::hall of fame counter */}
       </div>
       {/* end::hero text container */}
     </section>

@@ -31,7 +31,7 @@ const ResponsiveMenu = () => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <button className="lg:hidden px-[17px] md:px-[30px] py-[17px] border-l-[2px] bg-secondary-background cursor-pointer">
+        <button className="lg:hidden px-[17px] md:px-[30px] py-[17px] border-l-2 bg-secondary-background cursor-pointer">
           <svg
             width="28"
             height="28"
@@ -50,15 +50,15 @@ const ResponsiveMenu = () => {
       </SheetTrigger>
       <SheetContent className="w-full border">
         <SheetHeader>
-          <div className="flex justify-between items-center border-[2px] rounded-xl overflow-hidden bg-white mt-6">
-            <div className="px-5 py-4 3xl:py-5 3xl:px-6 bg-main w-fit border-r-[2px] border-border">
+          <div className="flex justify-between items-center border-2 rounded-xl overflow-hidden bg-white mt-6">
+            <div className="px-5 py-4 3xl:py-5 3xl:px-6 bg-main w-fit border-r-2 border-border">
               <Logo />
             </div>
 
             {/* Custom Close Button */}
             <button
               onClick={() => setOpen(false)}
-              className="lg:hidden px-[24px] md:px-[30px] py-[24px] border-l-[2px] bg-secondary-background cursor-pointer"
+              className="lg:hidden px-[24px] md:px-[30px] py-[24px] border-l-2 bg-secondary-background cursor-pointer"
             >
               <svg
                 width="14"
@@ -77,7 +77,7 @@ const ResponsiveMenu = () => {
             </button>
           </div>
         </SheetHeader>
-        <div className="flex flex-col font-medium mx-4 rounded-xl overflow-hidden border-[2px]">
+        <div className="flex flex-col font-medium mx-4 rounded-xl overflow-hidden border-2">
           {navbarItems.slice(0, 5).map((item) => (
             <NavLink
               to={item?.src}
@@ -104,5 +104,3 @@ const ResponsiveMenu = () => {
 };
 
 export default ResponsiveMenu;
-
-
