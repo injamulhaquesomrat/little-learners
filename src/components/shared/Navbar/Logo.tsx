@@ -6,17 +6,17 @@ const Logo = () => {
       <Link to={"/"} className="focus-visible:outline-0">
         <img
           className="hidden 3xl:block"
-          src="/assets/desktop-logo.png"
+          src="/assets/desktop-logo.svg"
           alt="desktop logo"
         />
         <img
           className="hidden lg:block 3xl:hidden"
-          src="/assets/laptop-logo.png"
+          src="/assets/laptop-logo.svg"
           alt="laptop logo"
         />
         <img
           className="lg:hidden"
-          src="/assets/mobile-logo.png"
+          src="/assets/mobile-logo.svg"
           alt="mobile logo"
         />
       </Link>
