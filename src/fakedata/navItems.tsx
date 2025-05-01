@@ -1,23 +1,20 @@
 export const navbarItems = [
-  { src: "/", name: "Home" },
+  { id: 1, src: "/", name: "Home" },
   {
+    id: 2,
     src: "/about",
     name: "About Us",
   },
   {
+    id: 3,
     src: "/admissions",
     name: "Admissions",
   },
   {
+    id: 4,
     src: "/academics",
     name: "Academics",
   },
-  {
-    src: "/student-life",
-    name: "Student LIfe",
-  },
-  {
-    src: "/contact",
-    name: "Contact",
-  },
+  { id: 5, src: "/student-life", name: "Student LIfe" },
+  { id: 6, src: "/contact", name: "Contact" },
 ];

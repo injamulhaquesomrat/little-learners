@@ -1,5 +1,5 @@
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ChevronDown } from "lucide-react"
+// import { ChevronDown } from "lucide-react"
 
 import * as React from "react"
 
@@ -43,7 +43,7 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        <ChevronDown className="pointer-events-none size-5 shrink-0 transition-transform duration-200" />
+        {/* <ChevronDown className="pointer-events-none size-5 shrink-0 transition-transform duration-200" /> */}
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )

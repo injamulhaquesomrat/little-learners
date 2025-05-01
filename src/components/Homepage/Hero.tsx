@@ -35,8 +35,8 @@ const Hero = () => {
         {/* start::hall of fame counter */}
         <div className="p-10 lg:p-5 xl:p-10 3xl:px-[50px] 3xl:py-6 border-2 rounded-xl grid sm:grid-cols-3 md:gap-2.5 gap-y-5 bg-secondary-background shadow-secondary-shadow">
           {hallOfFame.map((item) => (
-            <>
-              <div key={item?.id}>
+            <div key={item?.id}>
+              <div>
                 <h3 className="text-gray-15 text-[34px] lg:text-3xl xl:text-[34px] font-extrabold leading-[1.5]">
                   <CountUp
                     start={0}
@@ -51,7 +51,7 @@ const Hero = () => {
               <hr
                 className={cn(`sm:hidden border-b`, item?.id === 3 && "hidden")}
               />
-            </>
+            </div>
           ))}
         </div>
         {/* end::hall of fame counter */}

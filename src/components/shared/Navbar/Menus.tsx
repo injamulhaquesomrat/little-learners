@@ -7,6 +7,7 @@ const Menus = () => {
     <div className="lg:flex font-medium hidden">
       {navbarItems.slice(0, 5).map((item) => (
         <NavLink
+          key={item?.id}
           to={item?.src}
           className={({ isActive }: { isActive: boolean }) =>
             cn(
