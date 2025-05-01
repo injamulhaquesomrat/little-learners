@@ -8,6 +8,7 @@ const TestimonialsCarousel: React.FC = () => {
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+  
 
   return (
     <div className="relative w-full mx-auto overflow-hidden pb-4">

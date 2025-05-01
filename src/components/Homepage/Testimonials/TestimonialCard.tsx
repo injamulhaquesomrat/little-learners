@@ -8,7 +8,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: TestimonialType }) => {
       <CardContent className="flex flex-col items-center text-center gap-5 lg:gap-6 3xl:gap-[30px] p-0 h-full">
         <div>
           <img
-            className="h-[66px] w-[66px] 3xl:h-20 3xl:w-20 mb-2.5 3xl:mb-3 mx-auto rounded-full"
+            className="h-[66px] w-[66px] 3xl:h-20 3xl:w-20 mb-2.5 3xl:mb-3 mx-auto rounded-full border border-border"
             src={testimonial?.image}
             alt={testimonial?.name}
           />
