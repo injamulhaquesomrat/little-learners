@@ -4,40 +4,45 @@ import TestimonialCard from "./TestimonialCard";
 import { TestimonialType } from "@/types/testimonialTypes";
 
 const TestimonialsCarousel: React.FC = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden">
-      <div className="embla__viewport w-[90%]" ref={emblaRef}>
-        <div className="flex md:ml-3">
+    <div className="relative w-full mx-auto overflow-hidden pb-4">
+      <div
+        className="md:w-[80%] xl:w-[90%] mx-auto pb-4 pr-1.5 sm:pr-0 overflow-hidden"
+        ref={emblaRef}
+      >
+        <div className="flex md:ml-3 xl:ml-6">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial?.id} testimonial={testimonial} />
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 justify-between gap-4 mt-24 md:mt-0">
+      {/* start::embla carousel button container */}
+      <div className="grid grid-cols-1 justify-between gap-4 mt-24 md:mt-0 w-full mx-auto">
         <button
-          className="absolute top-[85%] left-[30%] lg:left-0 lg:top-1/2 transform lg:-translate-y-1/2 cursor-pointer bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
+          className="absolute top-[85%] left-[30%] xs:left-[35%] sm:left-[40%] md:left-0 md:top-1/2 transform md:-translate-y-1/2 cursor-pointer bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
           onClick={scrollPrev}
         >
           <img
-            src="/public/assets/icons/testimonials/arrow-left.svg"
+            src="/assets/icons/testimonials/arrow-left.svg"
             alt="arrow left"
           />
         </button>
         <button
-          className="absolute top-[85%] right-[30%] lg:right-0 lg:top-1/2 transform lg:-translate-y-1/2 cursor-pointer bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
+          className="absolute top-[85%] right-[30%] xs:right-[35%] sm:right-[40%] md:right-0 md:top-1/2 transform md:-translate-y-1/2 cursor-pointer bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
           onClick={scrollNext}
         >
           <img
-            src="/public/assets/icons/testimonials/arrow-right.svg"
+            src="/assets/icons/testimonials/arrow-right.svg"
             alt="arrow right"
           />
         </button>
       </div>
+      {/* end::embla carousel button container */}
     </div>
   );
 };
