@@ -7,7 +7,7 @@ const Testimonials = () => {
       <SectionHeading
         badgeText="Their Happy Words 🤗"
         title="Our Testimonials"
-        subHeading="What our clients say about us"
+        subHeading="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
       />
       <TestimonialsCarousel />
     </section>

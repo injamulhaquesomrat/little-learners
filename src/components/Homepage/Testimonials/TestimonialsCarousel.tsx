@@ -10,38 +10,41 @@ const TestimonialsCarousel: React.FC = () => {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden px-5">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="flex gap-3">
+    <div className="relative w-full mx-auto overflow-hidden">
+      <div className="embla__viewport w-[90%]" ref={emblaRef}>
+        <div className="flex md:ml-3">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial?.id} testimonial={testimonial} />
           ))}
         </div>
       </div>
-      <button
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
-        onClick={scrollPrev}
-      >
-        <img
-          src="/public/assets/icons/testimonials/arrow-left.svg"
-          alt="arrow left"
-        />
-      </button>
-      <button
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
-        onClick={scrollNext}
-      >
-        <img
-          src="/public/assets/icons/testimonials/arrow-right.svg"
-          alt="arrow right"
-        />
-      </button>
+      <div className="grid grid-cols-1 justify-between gap-4 mt-24 md:mt-0">
+        <button
+          className="absolute top-[85%] left-[30%] lg:left-0 lg:top-1/2 transform lg:-translate-y-1/2 cursor-pointer bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
+          onClick={scrollPrev}
+        >
+          <img
+            src="/public/assets/icons/testimonials/arrow-left.svg"
+            alt="arrow left"
+          />
+        </button>
+        <button
+          className="absolute top-[85%] right-[30%] lg:right-0 lg:top-1/2 transform lg:-translate-y-1/2 cursor-pointer bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
+          onClick={scrollNext}
+        >
+          <img
+            src="/public/assets/icons/testimonials/arrow-right.svg"
+            alt="arrow right"
+          />
+        </button>
+      </div>
     </div>
   );
 };
 
 export default TestimonialsCarousel;
 
+// testimonials items
 const testimonials: TestimonialType[] = [
   {
     id: 1,

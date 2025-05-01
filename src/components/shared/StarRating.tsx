@@ -1,5 +1,3 @@
-import React from "react";
-
 interface StarRatingProps {
   rating: number; // The current rating (e.g., 4.5)
   maxStars?: number; // The maximum number of stars (default is 5)
@@ -11,7 +9,10 @@ const StarRating: React.FC<StarRatingProps> = ({ rating, maxStars = 5 }) => {
     for (let i = 1; i <= maxStars; i++) {
       if (i <= Math.floor(rating)) {
         stars.push(
-          <span key={i} className="text-yellow-500 fill:text-[#FF8D4D]">
+          <span
+            key={i}
+            className="text-[var(--orange-65)] fill:text-[var(--orange-65)]"
+          >
             <svg
               width="16"
               height="16"
@@ -28,7 +29,10 @@ const StarRating: React.FC<StarRatingProps> = ({ rating, maxStars = 5 }) => {
         ); // Filled star
       } else if (i === Math.ceil(rating) && rating % 1 !== 0) {
         stars.push(
-          <span key={i} className="text-yellow-500 fill:text-[#FF8D4D]">
+          <span
+            key={i}
+            className="text-[var(--orange-65)] fill:text-[var(--orange-65)]"
+          >
             <svg
               width="16"
               height="16"
@@ -65,7 +69,7 @@ const StarRating: React.FC<StarRatingProps> = ({ rating, maxStars = 5 }) => {
     return stars;
   };
 
-  return <div className="flex justify-center">{renderStars()}</div>;
+  return <div className="flex justify-center gap-1">{renderStars()}</div>;
 };
 
 export default StarRating;
