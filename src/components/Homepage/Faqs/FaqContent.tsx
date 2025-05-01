@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { faqData } from "@/fakedata/faqItems";
 import { useState } from "react";
 
 const FaqContent = () => {
@@ -14,7 +15,7 @@ const FaqContent = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 xl:gap-[50px]">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 xl:gap-10 3xl:gap-[50px]">
       <div className="grid grid-cols-1 gap-5 h-fit">
         {faqData.slice(0, 4).map((faq) => (
           <div key={faq?.id}>
@@ -25,7 +26,7 @@ const FaqContent = () => {
               value={`item-${openItem}`}
             >
               <AccordionItem
-                className="shadow-transparent border-2 border-border px-6 py-5 data-[state=open]:py-[30px] bg-secondary-background data-[state=open]:bg-white"
+                className="shadow-transparent border-2 border-border px-6 xl:px-[30px] 3xl:px-10 py-5 xl:py-6 3xl:py-[34px] data-[state=open]:py-[30px] xl:data-[state=open]:py-[34px] 3xl:data-[state=open]:py-10 bg-secondary-background data-[state=open]:bg-white"
                 value={`item-${faq?.id}`}
               >
                 <AccordionTrigger
@@ -35,7 +36,7 @@ const FaqContent = () => {
                   <span className="text-lg font-semibold text-[var(--grey-15)]">
                     {faq?.question}
                   </span>
-                  <div className="h-8 w-8 flex items-center justify-center rounded-sm border-2 border-border p-1.5 bg-background">
+                  <div className="h-8 w-8 3xl:h-10 3xl:w-10 flex items-center justify-center rounded-sm border-2 border-border p-1.5 bg-background">
                     {
                       openItem !== faq.id ? (
                         // {/* plus icons */}
@@ -102,7 +103,7 @@ const FaqContent = () => {
               value={`item-${openItem}`}
             >
               <AccordionItem
-                className="shadow-transparent border-2 border-border px-6 py-5 data-[state=open]:py-[30px] bg-secondary-background data-[state=open]:bg-white"
+                className="shadow-transparent border-2 border-border px-6 xl:px-[30px] 3xl:px-10 py-5 xl:py-6 3xl:py-[34px] data-[state=open]:py-[30px] xl:data-[state=open]:py-[34px] 3xl:data-[state=open]:py-10 bg-secondary-background data-[state=open]:bg-white"
                 value={`item-${faq?.id}`}
               >
                 <AccordionTrigger
@@ -112,7 +113,7 @@ const FaqContent = () => {
                   <span className="text-lg font-semibold text-[var(--grey-15)]">
                     {faq?.question}
                   </span>
-                  <div className="h-8 w-8 flex items-center justify-center rounded-sm border-2 border-border p-1.5 bg-background">
+                  <div className="h-8 w-8 3xl:h-10 3xl:w-10 flex items-center justify-center rounded-sm border-2 border-border p-1.5 bg-background">
                     {
                       openItem !== faq.id ? (
                         // {/* plus icons */}
@@ -173,54 +174,3 @@ const FaqContent = () => {
 };
 
 export default FaqContent;
-
-const faqData = [
-  {
-    id: 1,
-    question: "What age groups does Little Learners cater to?",
-    answer:
-      "Little Learners typically accepts children from as young as 6 months to 5 years old.",
-  },
-  {
-    id: 2,
-    question: "What are the school hours and schedules?",
-    answer:
-      "The school may operate in sessions, such as January to December or April to March, with specific timings for morning and day classes.",
-  },
-  {
-    id: 3,
-    question: "What documents are required for enrollment?",
-    answer:
-      "A photocopy of the child's birth certificate, two recent photographs, and a completed admission form are usually required.",
-  },
-  {
-    id: 4,
-    question: "What curriculum does Little Learners follow?",
-    answer:
-      "The curriculum is often tailored to early childhood development, focusing on play-based learning and foundational skills.",
-  },
-  {
-    id: 5,
-    question: "Do you offer extracurricular activities?",
-    answer:
-      "Activities may include arts and crafts, outdoor play, and educational outings.",
-  },
-  {
-    id: 6,
-    question: "How are children grouped in classes?",
-    answer:
-      "Children are typically grouped by age, but factors like readiness, social-emotional development, and personality may also be considered.",
-  },
-  {
-    id: 7,
-    question: "Is there a waiting list for enrollment?",
-    answer:
-      "Yes, places may be allocated based on availability and a waiting list.",
-  },
-  {
-    id: 8,
-    question: "Do you provide meals or snacks?",
-    answer:
-      "Some schools may offer meals, while others require parents to pack lunches.",
-  },
-];
