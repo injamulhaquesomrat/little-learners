@@ -12,6 +12,7 @@
   --border: oklch(0.27 0 0);
   --ring: oklch(0.21 0 0);
   --overlay: oklch(0.46 0.0016 286.34);
+  --light-shadow: 4px 4px 0px 0px var(--border);
   --shadow: 6px 6px 0px 0px var(--border);
   --secondary-shadow: 6px 6px 0px 0px var(--orange-80);
 
@@ -60,6 +61,7 @@
   --spacing-reverseBoxShadowY: -6px;
   --radius-base: 6px;
   --shadow-shadow: var(--shadow);
+  --shadow-light-shadow: var(--light-shadow);
   --shadow-secondary-shadow: var(--secondary-shadow);
 
   --font-raleway: "Raleway", sans-serif;
