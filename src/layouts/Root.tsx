@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/Footer/Footer";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import { Outlet } from "react-router";
 
@@ -6,6 +7,7 @@ const Root = () => {
     <div className="bg-background font-outfit text-[var(--grey-20)]">
       <Navbar />
       <Outlet />
+      <Footer />
     </div>
   );
 };

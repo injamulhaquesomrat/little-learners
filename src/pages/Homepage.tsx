@@ -13,6 +13,7 @@ const Homepage = () => {
       <Testimonials />
       <Faqs />
       <NavigateThroughPages />
+      
     </Container>
   );
 };

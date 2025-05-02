@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "../Logo";
 import Menus from "./Menus";
 import ResponsiveMenu from "./ResponsiveMenu";
 

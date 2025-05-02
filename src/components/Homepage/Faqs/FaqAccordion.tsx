@@ -43,7 +43,7 @@ const FaqAccordion = ({
                   className={`transition-transform duration-500 ${
                     openItem === faq.id ? "scale-0" : "scale-100"
                   }`}
-                  src="/public/assets/icons/faq/plus-icon.svg"
+                  src="/assets/icons/faq/plus-icon.svg"
                   alt="plus icon"
                 />
               ) : (
@@ -52,7 +52,7 @@ const FaqAccordion = ({
                   className={`transition-transform duration-500 ${
                     openItem === faq.id ? "scale-100" : "scale-0"
                   }`}
-                  src="/public/assets/icons/faq/minus-icon.svg"
+                  src="/assets/icons/faq/minus-icon.svg"
                   alt="miinus icon"
                 />
               )}

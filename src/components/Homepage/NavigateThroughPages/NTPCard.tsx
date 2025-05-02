@@ -27,7 +27,7 @@ const NTPCard = ({ ntp }: { ntp: ntpType }) => {
       </CardContent>
       <Link to={ntp?.link}>
         <CardAction className="flex justify-center items-center w-full px-0">
-          <Button className="w-full py-4 xl:py-[18px] 3xl bg-foreground text-[var(--grey-20)] text-base xl:text-lg 3xl:text-xl font-medium flex items-center gap-2.5 leading-[1.25] cursor-pointer shadow-light-shadow">
+          <Button className="w-full py-4 xl:py-[18px] bg-foreground text-[var(--grey-20)] text-base xl:text-lg 3xl:text-xl font-medium flex items-center gap-2.5 leading-[1.25] cursor-pointer shadow-light-shadow">
             <span>Learn More</span>{" "}
             <svg
               className=""

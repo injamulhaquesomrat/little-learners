@@ -5,7 +5,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
-import Logo from "./Logo";
+import Logo from "../Logo";
 import { NavLink } from "react-router";
 import { cn } from "@/lib/utils";
 import { navbarItems } from "@/fakedata/navItems";
