@@ -11,10 +11,7 @@ import { Link } from "react-router";
 
 const NTPCard = ({ ntp }: { ntp: ntpType }) => {
   return (
-    <Card
-      key={ntp?.id}
-      className="text-center shadow-light-shadow p-10 xl:p-[60px] 3xl:p-20  gap-0 bg-white justify-between"
-    >
+    <Card className="text-center shadow-light-shadow p-10 xl:p-[60px] 3xl:p-20  gap-0 bg-white justify-between">
       <CardHeader className="p-0">
         <CardTitle className="text-[var(--grey-10)] text-[28px] md:text-3xl xl:text-[34px] 3xl:text-5xl font-bold font-raleway leading-[1.3] pb-5 xl:pb-6 3xl:pb-[30px]">
           {ntp?.title}
