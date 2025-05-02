@@ -7,13 +7,16 @@ import {
 import { FaqType } from "@/types/faqTypes";
 
 type FaqAccordionProps = {
-    faq: FaqType;
-    openItem: number;
-    toggleAccordion: (id: number) => void;
-  };
-  
+  faq: FaqType;
+  openItem: number;
+  toggleAccordion: (id: number) => void;
+};
 
-const FaqAccordion = ({ faq, openItem, toggleAccordion }: FaqAccordionProps) => {
+const FaqAccordion = ({
+  faq,
+  openItem,
+  toggleAccordion,
+}: FaqAccordionProps) => {
   return (
     <div key={faq?.id}>
       <Accordion
@@ -34,51 +37,25 @@ const FaqAccordion = ({ faq, openItem, toggleAccordion }: FaqAccordionProps) => 
               {faq?.question}
             </span>
             <div className="h-8 w-8 3xl:h-10 3xl:w-10 flex items-center justify-center rounded-sm border-2 border-border p-1.5 bg-background">
-              {
-                openItem !== faq.id ? (
-                  // {/* plus icons */}
-                  <svg
-                    className={`transition-transform duration-500 ${
-                      openItem === faq.id ? "scale-0" : "scale-100"
-                    }`}
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 4.5V19.5M19.5 12L4.5 12"
-                      stroke="#1A1A1A"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                ) : (
-                  // {/* plus icons */}
-                  // {/* minus icons */}
-                  <svg
-                    className={`transition-transform duration-500 ${
-                      openItem === faq.id ? "scale-100" : "scale-0"
-                    }`}
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18 12L6 12"
-                      stroke="#1A1A1A"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                )
+              {openItem !== faq.id ? (
+                // {/* plus icons */}
+                <img
+                  className={`transition-transform duration-500 ${
+                    openItem === faq.id ? "scale-0" : "scale-100"
+                  }`}
+                  src="/public/assets/icons/faq/plus-icon.svg"
+                  alt="plus icon"
+                />
+              ) : (
                 // {/* minus icons */}
-              }
+                <img
+                  className={`transition-transform duration-500 ${
+                    openItem === faq.id ? "scale-100" : "scale-0"
+                  }`}
+                  src="/public/assets/icons/faq/minus-icon.svg"
+                  alt="miinus icon"
+                />
+              )}
             </div>
           </AccordionTrigger>
           <AccordionContent className="p-0 bg-white data-[state=open]:bg-secondary-background pt-5 text-base">
