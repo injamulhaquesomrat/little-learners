@@ -8,7 +8,7 @@ type pageHeroProps = {
 const PageHero = ({ badgeText, heading, subHeading }: pageHeroProps) => {
   return (
     <section className="pt-10 pb-20">
-      <div className="border-2 border-border py-[50px] xl:py-[100px] px-[30px] lg:px-14 xl:px-20 3xl:px-[120px] 3xl:py-[150px] rounded-[10px] shadow-shadow bg-white relative xl:grid xl:grid-cols-2 gap-10 xl:gap-[50px]">
+      <div className="border-2 border-border py-[50px] xl:py-[100px] px-[30px] lg:px-14 xl:px-20 3xl:px-[120px] 3xl:py-[150px] rounded-[10px] shadow-shadow bg-white relative xl:grid xl:grid-cols-2 gap-10 xl:gap-[50px] items-center">
         {/* start::bg props */}
         <div className="absolute top-0 left-0">
           <img

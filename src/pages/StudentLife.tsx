@@ -1,8 +1,17 @@
+import Container from "@/components/shared/Container";
+import PageHero from "@/components/shared/PageHero";
+
 const StudentLife = () => {
   return (
-    <div>
-      <h2>Student Life</h2>
-    </div>
+    <Container>
+      <PageHero
+        badgeText={"Enriching Student Life"}
+        heading={"Embracing Learning with Discovery and Joy"}
+        subHeading={
+          "Welcome to our Student Life page, where the magic of childhood comes alive through the enriching experiences and adventures that our students embark on each day. At our kindergarten school, we believe that learning goes beyond textbooks, and we strive to create a holistic and engaging environment that nurtures every aspect of a child's development."
+        }
+      />
+    </Container>
   );
 };
 
