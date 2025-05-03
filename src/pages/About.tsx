@@ -1,23 +1,16 @@
 import Container from "@/components/shared/Container";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import PageHero from "@/components/shared/PageHero";
 
 const About = () => {
   return (
     <Container>
-      <h2>About Page</h2>
-      <Accordion type="single" collapsible className="w-full max-w-xl">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <PageHero
+        badgeText={"Overview"}
+        heading={"Welcome to Little Learners Academy"}
+        subHeading={
+          "A leading kinder garden school dedicated to providing a nurturing and stimulating environment for young learners. With a commitment to excellence in early education, we believe in shaping curious minds and building a strong foundation for a lifelong love of learning. Our holistic approach fosters intellectual, social, emotional, and physical development, ensuring that each child reaches their full potential."
+        }
+      />
     </Container>
   );
 };
