@@ -1,5 +1,5 @@
+import Container from "@/components/shared/Container";
 import PageHero from "@/components/shared/PageHero";
-import { Container } from "lucide-react";
 
 const Contact = () => {
   return (

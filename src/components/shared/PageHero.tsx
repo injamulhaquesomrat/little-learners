@@ -1,4 +1,6 @@
+import { useLocation } from "react-router";
 import { Badge } from "../ui/badge";
+import HeroContactInfo from "./HeroContactInfo";
 type pageHeroProps = {
   badgeText: string;
   heading: string;
@@ -6,6 +8,8 @@ type pageHeroProps = {
 };
 
 const PageHero = ({ badgeText, heading, subHeading }: pageHeroProps) => {
+  const currentPath = useLocation().pathname;
+
   return (
     <section className="pt-10 pb-20">
       <div className="border-2 border-border py-[50px] xl:py-[100px] px-[30px] lg:px-14 xl:px-20 3xl:px-[120px] 3xl:py-[150px] rounded-[10px] shadow-shadow bg-white relative xl:grid xl:grid-cols-2 gap-10 xl:gap-[50px] items-center">
@@ -30,10 +34,15 @@ const PageHero = ({ badgeText, heading, subHeading }: pageHeroProps) => {
             {heading}
           </h1>
         </div>
+
         <div className="col-span-1">
           <p className="text-center xl:text-left text-[var(--grey-20)] font-medium leading-[1.5] 3xl:text-xl">
             {subHeading}
           </p>
+
+          {/* start::hero contact information */}
+          {currentPath === "/contact" && <HeroContactInfo />}
+          {/* end::hero contact information */}
         </div>
       </div>
     </section>

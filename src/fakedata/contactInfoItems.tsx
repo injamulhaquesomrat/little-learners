@@ -20,4 +20,11 @@ export const contactInfoItems = [
     logo: "/assets/icons/footer/location-icon.svg",
     contactText: "Somewhere in the World",
   },
+  {
+    id: "office",
+    name: "Office Hours",
+    link: "/contact",
+    logo: "/assets/icons/footer/time-icon.svg",
+    contactText: "Office Hours - 9am - 6 pm",
+  },
 ];
