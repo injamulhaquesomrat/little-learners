@@ -2,7 +2,7 @@ import HistoryItem from "./HistoryItem";
 
 const HistoryContent = () => {
   return (
-    <div className="bg-white border-2 border-border shadow-light-shadow rounded-xl py-[50px] px-5">
+    <div className="bg-white border-2 border-border shadow-light-shadow rounded-xl py-[50px] px-5 md:px-8 relative">
       <div className="flex flex-col gap-[50px]">
         {historyItems.map((item) => (
           <HistoryItem key={item?.id} item={item} />
@@ -23,7 +23,7 @@ const historyItems = [
       "Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow.",
   },
   {
-    id: 4,
+    id: 2,
     year: 2017,
     headline: "Innovation and Technology",
     description:
