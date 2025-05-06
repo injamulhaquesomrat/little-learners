@@ -7,12 +7,12 @@ const HistoryItem = ({ item }: { item: historyTypes }) => {
         {/* start::horizontal line with both side circle ring */}
         <img
           className="absolute -left-3 z-10"
-          src="/public/assets/icons/history/circle-ring.svg"
+          src="/assets/icons/history/circle-ring.svg"
           alt="circle ring"
         />
         <img
           className="absolute -left-12 z-10"
-          src="/public/assets/icons/history/circle-ring.svg"
+          src="/assets/icons/history/circle-ring.svg"
           alt="circle ring"
         />
         <div className="pt-1.5 px-1 bg-[var(--orange-80)] absolute -left-8">
@@ -38,7 +38,7 @@ const HistoryItem = ({ item }: { item: historyTypes }) => {
       >
         <svg
           className="h-full w-0.5"
-          width="2"
+          width="1"
           height="100"
           xmlns="http://www.w3.org/2000/svg"
         >
