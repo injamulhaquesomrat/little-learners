@@ -6,9 +6,9 @@ import {
 } from "@/components/ui/card";
 import { benefitTypes } from "@/types/benefitTypes";
 
-const BenefitCard = ({ item }: { item: benefitTypes }) => {
+const AcheivementCard = ({ item }: { item: benefitTypes }) => {
   return (
-    <div className="relative">
+    <div className="relative flex-none w-full sm:w-[47.5%] lg:w-[31.5%] xl:w-[31.1%] ml-6 xl:ml-10 3xl:ml-[50px] col-span-1">
       <div className="p-4 rounded-lg border-2 absolute -top-[28px] 3xl:-top-[37px] left-[24px] z-20 bg-foreground flex items-center justify-center h-[56px] w-[56px] 3xl:h-[74px] 3xl:w-[74px]">
         <img
           className="3xl:h-[34px] 3xl:w-[34px]"
@@ -30,4 +30,4 @@ const BenefitCard = ({ item }: { item: benefitTypes }) => {
   );
 };
 
-export default BenefitCard;
+export default AcheivementCard;

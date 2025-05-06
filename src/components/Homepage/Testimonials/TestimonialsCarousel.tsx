@@ -3,12 +3,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import TestimonialCard from "./TestimonialCard";
 import { TestimonialType } from "@/types/testimonialTypes";
 
-const TestimonialsCarousel: React.FC = () => {
+const TestimonialsCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
-  
 
   return (
     <div className="relative w-full mx-auto overflow-hidden pb-4">
