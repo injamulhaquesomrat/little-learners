@@ -1,4 +1,5 @@
 import Acheivements from "@/components/About/Acheivements/Acheivements";
+import History from "@/components/About/History/History";
 import MissionVision from "@/components/About/MissionVision/MissionVision";
 import Container from "@/components/shared/Container";
 import PageHero from "@/components/shared/PageHero";
@@ -15,6 +16,7 @@ const About = () => {
       />
       <MissionVision />
       <Acheivements />
+      <History />
     </Container>
   );
 };
