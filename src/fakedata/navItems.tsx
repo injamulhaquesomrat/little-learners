@@ -6,14 +6,14 @@ export const navbarItems = [
     name: "About Us",
   },
   {
-    id: 3,
-    src: "/admissions",
-    name: "Admissions",
-  },
-  {
     id: 4,
     src: "/academics",
     name: "Academics",
+  },
+  {
+    id: 3,
+    src: "/admissions",
+    name: "Admissions",
   },
   { id: 5, src: "/student-life", name: "Student LIfe" },
   { id: 6, src: "/contact", name: "Contact" },

@@ -4,7 +4,7 @@ import { TestimonialType } from "@/types/testimonialTypes";
 
 const TestimonialCard = ({ testimonial }: { testimonial: TestimonialType }) => {
   return (
-    <Card className="p-[30px] xl:p-10 h-full bg-white flex-none w-full sm:w-[47%] lg:w-[31%] xl:w-[30%] ml-6 xl:ml-10 3xl:ml-[50px]">
+    <Card className="p-[30px] xl:p-10 h-full w-full bg-white flex-none sm:w-[47%] lg:w-[31%] xl:w-[30%] ml-6 xl:ml-10 3xl:ml-[50px]">
       <CardContent className="flex flex-col items-center text-center gap-5 lg:gap-6 3xl:gap-[30px] p-0 h-full">
         <div>
           <img

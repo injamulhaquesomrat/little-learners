@@ -14,7 +14,6 @@ import { navbarItems } from "@/fakedata/navItems";
 
 const ResponsiveMenu = () => {
   const [open, setOpen] = useState(false);
-  console.log(open);
 
   useEffect(() => {
     const handleResize = () => {
