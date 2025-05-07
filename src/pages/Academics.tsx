@@ -1,4 +1,5 @@
 import Features from "@/components/Academics/Features/Features";
+import Gallery from "@/components/Academics/Gallery/Gallery";
 import Subjects from "@/components/Academics/Subjects/Subjects";
 import Container from "@/components/shared/Container";
 import PageHero from "@/components/shared/PageHero";
@@ -16,6 +17,7 @@ const Academics = () => {
 
       <Features />
       <Subjects />
+      <Gallery />
     </Container>
   );
 };
