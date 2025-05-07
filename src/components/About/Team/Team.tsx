@@ -1,5 +1,6 @@
 import SectionHeading from "@/components/shared/SectionHeading";
 import SectionLayout from "@/components/shared/SectionLayout";
+import TeamContent from "./TeamContent";
 
 const Team = () => {
   return (
@@ -13,7 +14,7 @@ const Team = () => {
       {/* end::section heading*/}
 
       {/* start::team content */}
-      <div></div>
+      <TeamContent />
       {/* end::team content */}
     </SectionLayout>
   );
