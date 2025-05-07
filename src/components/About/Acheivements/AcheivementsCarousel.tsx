@@ -30,7 +30,10 @@ const AcheivementsCarousel = () => {
 
   return (
     <div className="relative w-full mx-auto overflow-hidden">
-      <div className="pb-4 pr-1.5 sm:pr-0 overflow-hidden pt-7" ref={emblaRef}>
+      <div
+        className="pb-4 pr-1.5 sm:pr-0 overflow-hidden pt-8 3xl:pt-10"
+        ref={emblaRef}
+      >
         <div className="flex">
           {acheivementItems.map((item) => (
             <AcheivementCard key={item?.id} item={item} />
