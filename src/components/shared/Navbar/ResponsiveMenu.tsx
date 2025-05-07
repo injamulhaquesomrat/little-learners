@@ -1,16 +1,6 @@
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetTrigger } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
-import Logo from "../Logo";
-import { NavLink } from "react-router";
-import { cn } from "@/lib/utils";
-import { navbarItems } from "@/fakedata/navItems";
+import ResponsiveMenuContent from "./ResponsiveMenuContent";
 
 const ResponsiveMenu = () => {
   const [open, setOpen] = useState(false);
@@ -30,8 +20,10 @@ const ResponsiveMenu = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <Sheet open={open} onOpenChange={setOpen}>
+      {/* start::responsive menu trigger */}
       <SheetTrigger asChild>
         <button className="lg:hidden px-[17px] md:px-[30px] py-[17px] border-l-2 bg-secondary-background cursor-pointer">
           <svg
@@ -50,60 +42,11 @@ const ResponsiveMenu = () => {
           </svg>
         </button>
       </SheetTrigger>
-      <SheetContent className="w-full border">
-        <SheetHeader>
-          <SheetTitle />
-          <SheetDescription />
-          <div className="flex justify-between items-center border-2 rounded-xl overflow-hidden bg-white mt-6">
-            <div className="px-5 py-4 3xl:py-5 3xl:px-6 bg-main w-fit border-r-2 border-border">
-              <Logo />
-            </div>
+      {/* end::responsive menu trigger */}
 
-            {/* Custom Close Button */}
-            <button
-              onClick={() => setOpen(false)}
-              className="lg:hidden px-[24px] md:px-[30px] py-[24px] border-l-2 bg-secondary-background cursor-pointer"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L7 5.93934L12.4697 0.469671C12.7626 0.176777 13.2374 0.176778 13.5303 0.469671C13.8232 0.762564 13.8232 1.23744 13.5303 1.53033L8.06066 7L13.5303 12.4697C13.8232 12.7626 13.8232 13.2374 13.5303 13.5303C13.2374 13.8232 12.7626 13.8232 12.4697 13.5303L7 8.06066L1.53033 13.5303C1.23744 13.8232 0.762563 13.8232 0.46967 13.5303C0.176777 13.2374 0.176777 12.7626 0.46967 12.4697L5.93934 7L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967Z"
-                  fill="#1A1A1A"
-                />
-              </svg>
-            </button>
-          </div>
-        </SheetHeader>
-        <div className="flex flex-col font-medium mx-4 rounded-xl overflow-hidden border-2">
-          {navbarItems.slice(0, 5).map((item) => (
-            <NavLink
-              to={item?.src}
-              onClick={() => setOpen(!open)}
-              className={({ isActive }: { isActive: boolean }) =>
-                cn(
-                  "py-[21px] 3xl:py-[25px] px-5 3xl:px-[34px] border-b-[2px] 3xl:text-xl hover:bg-foreground",
-                  isActive ? "bg-secondary-background" : ""
-                )
-              }
-            >
-              {item?.name}
-            </NavLink>
-          ))}
-          <NavLink
-            to={"/contact"}
-            className="py-[21px] 3xl:py-[25px] px-5 3xl:px-[34px] 3xl:text-xl bg-[var(--orange-75)]"
-          >
-            Contact
-          </NavLink>
-        </div>
-      </SheetContent>
+      {/* start::responsive menu content */}
+      <ResponsiveMenuContent setOpen={setOpen} />
+      {/* end::responsive menu content */}
     </Sheet>
   );
 };

@@ -1,9 +1,10 @@
 import SectionHeading from "@/components/shared/SectionHeading";
 import AcheivementsCarousel from "./AcheivementsCarousel";
+import SectionLayout from "@/components/shared/SectionLayout";
 
 const Acheivements = () => {
   return (
-    <section className="pb-20 xl:pb-[150px] 3xl:pb-[200px]">
+    <SectionLayout>
       {/* start::section heading*/}
       <SectionHeading
         badgeText="Our Achievements"
@@ -15,7 +16,7 @@ const Acheivements = () => {
       {/* start::acheivements carousel */}
       <AcheivementsCarousel />
       {/* end::acheivements carousel */}
-    </section>
+    </SectionLayout>
   );
 };
 

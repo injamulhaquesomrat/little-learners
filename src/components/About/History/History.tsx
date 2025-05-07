@@ -1,9 +1,10 @@
 import SectionHeading from "@/components/shared/SectionHeading";
 import HistoryContent from "./HistoryContent";
+import SectionLayout from "@/components/shared/SectionLayout";
 
 const History = () => {
   return (
-    <section className="pb-20 xl:pb-[150px] 3xl:pb-[200px]">
+    <SectionLayout>
       {/* start::section heading*/}
       <SectionHeading
         badgeText="Our Progressive Journey"
@@ -15,7 +16,7 @@ const History = () => {
       {/* start::history content */}
       <HistoryContent />
       {/* end::history content */}
-    </section>
+    </SectionLayout>
   );
 };
 

@@ -1,9 +1,10 @@
+import SectionLayout from "@/components/shared/SectionLayout";
 import SectionHeading from "../../shared/SectionHeading";
 import BenefitsContent from "./BenefitsContent";
 
 const Benefits = () => {
   return (
-    <section className="pb-20 xl:pb-[150px] 3xl:pb-[200px]">
+    <SectionLayout>
       {/* start::section heading */}
       <SectionHeading
         badgeText={"Children Deserve Bright Future"}
@@ -17,7 +18,7 @@ const Benefits = () => {
       {/* start::benefits content */}
       <BenefitsContent />
       {/* end::benefits content */}
-    </section>
+    </SectionLayout>
   );
 };
 

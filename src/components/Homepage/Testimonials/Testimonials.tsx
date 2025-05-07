@@ -1,16 +1,17 @@
 import SectionHeading from "@/components/shared/SectionHeading";
 import TestimonialsCarousel from "./TestimonialsCarousel";
+import SectionLayout from "@/components/shared/SectionLayout";
 
 const Testimonials = () => {
   return (
-    <section className="pb-20 xl:pb-[150px] 3xl:pb-[200px]">
+    <SectionLayout>
       <SectionHeading
         badgeText="Their Happy Words 🤗"
         title="Our Testimonials"
         subHeading="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
       />
       <TestimonialsCarousel />
-    </section>
+    </SectionLayout>
   );
 };
 

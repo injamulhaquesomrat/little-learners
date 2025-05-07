@@ -1,9 +1,10 @@
 import SectionHeading from "@/components/shared/SectionHeading";
 import NTPContent from "./NTPContent";
+import SectionLayout from "@/components/shared/SectionLayout";
 
 const NavigateThroughPages = () => {
   return (
-    <section className="pb-20 xl:pb-[150px] 3xl:pb-[200px]">
+    <SectionLayout>
       {/* start::section heading */}
       <SectionHeading
         badgeText="Explore More"
@@ -15,7 +16,7 @@ const NavigateThroughPages = () => {
       {/* start:: navigate through pages content*/}
       <NTPContent />
       {/* end:: navigate through pages content*/}
-    </section>
+    </SectionLayout>
   );
 };
 

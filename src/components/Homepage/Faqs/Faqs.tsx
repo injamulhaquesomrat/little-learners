@@ -1,9 +1,10 @@
 import SectionHeading from "@/components/shared/SectionHeading";
 import FaqContent from "./FaqContent";
+import SectionLayout from "@/components/shared/SectionLayout";
 
 const Faqs = () => {
   return (
-    <section className="pb-20 xl:pb-[150px] 3xl:pb-[200px]">
+    <SectionLayout>
       {/* start::section heading */}
       <SectionHeading
         badgeText={"Solutions For The Doubts"}
@@ -15,7 +16,7 @@ const Faqs = () => {
       {/* start::faq content */}
       <FaqContent />
       {/* end::faq content */}
-    </section>
+    </SectionLayout>
   );
 };
 

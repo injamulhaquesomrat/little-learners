@@ -1,10 +1,11 @@
 import SectionHeading from "@/components/shared/SectionHeading";
 import { missionVisionItems } from "@/fakedata/missionVisionItems";
 import MissionVisionCard from "./MissionVisionCard";
+import SectionLayout from "@/components/shared/SectionLayout";
 
 const MissionVision = () => {
   return (
-    <section className="pb-20 xl:pb-[150px] 3xl:pb-[200px]">
+    <SectionLayout>
       {/* start::section heading*/}
       <SectionHeading
         badgeText="Mission & Vision"
@@ -20,7 +21,7 @@ const MissionVision = () => {
         ))}
       </div>
       {/* end::mission & vision content */}
-    </section>
+    </SectionLayout>
   );
 };
 
