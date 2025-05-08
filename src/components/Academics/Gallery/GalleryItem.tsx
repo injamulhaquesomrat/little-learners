@@ -18,7 +18,7 @@ const GalleryItem = ({ item }: { item: galleryItem }) => {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <div className="-mt-[90px] md:-mt-[100px] xl:-mt-[125px]">
+    <div className="-mt-[90px] md:-mt-[100px] xl:-mt-[125px] pt-20 xl:pt-30 3xl:pt-[150px]">
       {/* start::gallery item carousel */}
       <GalleryItemCarousel emblaRef={emblaRef} images={item?.images} />
       {/* end::gallery item carousel */}
