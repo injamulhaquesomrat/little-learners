@@ -1,23 +1,26 @@
+import { imageItem } from "@/types/galleryItemTypes";
 import { EmblaViewportRefType } from "embla-carousel-react";
 
 interface GalleryItemCarouselProps {
   emblaRef: EmblaViewportRefType;
+  images: imageItem[];
 }
 
 const GalleryItemCarousel = ({ emblaRef }: GalleryItemCarouselProps) => {
   return (
-    <div className="relative w-full mx-auto overflow-hidden px-[30px]">
-      <div
-        className="pb-4 pr-1.5 sm:pr-0 overflow-hidden pt-8 3xl:pt-10"
-        ref={emblaRef}
-      >
+    <div className="relative -bottom-[90px] md:-bottom-[100px] xl:-bottom-[125px] w-full mx-auto overflow-hidden px-[30px] xl:px-10 3xl:px-[50px] z-10">
+      <div className="pr-0 overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {galleryItems.map((item) => (
             <div
               key={item?.id}
-              className="flex-none w-full sm:w-[47.5%] lg:w-[31.5%] xl:w-[31.1%] ml-6 xl:ml-10 3xl:ml-[50px]"
+              className="flex-none w-full sm:w-[47.5%] lg:w-[31.5%] xl:w-[22.4%] ml-6 xl:ml-10 3xl:ml-[50px] rounded-[10px] border-2 border-border overflow-hidden"
             >
-              <img src="https://placehold.co/600x400" alt="gallery image" />
+              <img
+                className="h-full w-full aspect-[298/203] xl:aspect-[270/234] object-cover"
+                src="https://placehold.co/600x400"
+                alt="gallery image"
+              />
             </div>
           ))}
         </div>

@@ -1,11 +1,11 @@
-export type GalleryItem = {
+export type galleryItem = {
   id: number;
   type: string;
   description: string;
-  images: ImageItem[];
+  images: imageItem[];
 };
 
-type ImageItem = {
+export type imageItem = {
   id: string;
   src: string;
 };

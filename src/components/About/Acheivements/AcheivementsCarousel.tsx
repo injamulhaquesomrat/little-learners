@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import AcheivementCard from "./AcheivementCard";
 import { acheivementItems } from "@/fakedata/acheivementItems";
+import CarouselNavigation from "@/components/shared/CarouselNavigation";
 
 const AcheivementsCarousel = () => {
   const [visibleAwards, setVisibleAwards] = useState(1);
@@ -47,28 +48,9 @@ const AcheivementsCarousel = () => {
           </p>
         </div>
 
-        {/* start::embla carousel button container */}
-        <div className="grid grid-cols-2 justify-between gap-4 md:mt-0">
-          <button
-            className="cursor-pointer bg-white text-white rounded-lg p-2.5 hover:bg-secondary-background transition border-2 border-border"
-            onClick={scrollPrev}
-          >
-            <img
-              src="/assets/icons/testimonials/arrow-left.svg"
-              alt="arrow left"
-            />
-          </button>
-          <button
-            className="cursor-pointer bg-white text-white rounded-lg p-2.5 hover:bg-secondary-background transition border-2 border-border"
-            onClick={scrollNext}
-          >
-            <img
-              src="/assets/icons/testimonials/arrow-right.svg"
-              alt="arrow right"
-            />
-          </button>
-        </div>
-        {/* end::embla carousel button container */}
+        {/* start::embla carousel navigation */}
+        <CarouselNavigation onPrev={scrollPrev} onNext={scrollNext} />
+        {/* end::embla carousel navigation */}
       </div>
     </div>
   );

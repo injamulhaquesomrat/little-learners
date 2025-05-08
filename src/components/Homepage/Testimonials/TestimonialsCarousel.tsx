@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import TestimonialCard from "./TestimonialCard";
 import { testimonials } from "@/fakedata/testimonialItems";
+import CarouselNavigation from "@/components/shared/CarouselNavigation";
 
 const TestimonialsCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
@@ -24,28 +25,15 @@ const TestimonialsCarousel = () => {
       </div>
       {/* end::testimonial carousel cards */}
 
-      {/* start::embla carousel button container */}
-      <div className="grid grid-cols-1 justify-between gap-4 mt-24 md:mt-0 w-full mx-auto">
-        <button
-          className="absolute top-[85%] left-[30%] xs:left-[35%] sm:left-[40%] md:left-0 md:top-1/2 transform md:-translate-y-1/2 cursor-pointer bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
-          onClick={scrollPrev}
-        >
-          <img
-            src="/assets/icons/testimonials/arrow-left.svg"
-            alt="arrow left"
-          />
-        </button>
-        <button
-          className="absolute top-[85%] right-[30%] xs:right-[35%] sm:right-[40%] md:right-0 md:top-1/2 transform md:-translate-y-1/2 cursor-pointer bg-white text-white rounded-lg p-3 hover:bg-secondary-background transition border-2 border-border"
-          onClick={scrollNext}
-        >
-          <img
-            src="/assets/icons/testimonials/arrow-right.svg"
-            alt="arrow right"
-          />
-        </button>
-      </div>
-      {/* end::embla carousel button container */}
+      {/* start::embla carousel navigation */}
+      <CarouselNavigation
+        className="grid-cols-1 mt-24 w-full mx-auto"
+        prevBtnClassName="absolute top-[85%] left-[30%] xs:left-[35%] sm:left-[40%] md:left-0 md:top-1/2 transform md:-translate-y-1/2"
+        nextBtnClassName="absolute top-[85%] right-[30%] xs:right-[35%] sm:right-[40%] md:right-0 md:top-1/2 transform md:-translate-y-1/2"
+        onPrev={scrollPrev}
+        onNext={scrollNext}
+      />
+      {/* end::embla carousel navigation */}
     </div>
   );
 };
