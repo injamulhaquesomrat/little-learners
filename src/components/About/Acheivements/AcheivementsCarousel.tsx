@@ -40,7 +40,7 @@ const AcheivementsCarousel = () => {
           ))}
         </div>
       </div>
-      <div className="flex mt-7 xl:mt-10 3xl:mmt-[50px] justify-between items-center">
+      <div className="flex mt-7 xl:mt-10 3xl:mt-[50px] justify-between items-center">
         <div>
           <p className="text-lg font-bold font-raleway">
             {acheivementItems.length - visibleAwards} More Awards
