@@ -1,7 +1,7 @@
-import { RefObject } from "react";
+import { EmblaViewportRefType } from "embla-carousel-react";
 
 interface GalleryItemCarouselProps {
-  emblaRef: RefObject<HTMLDivElement>;
+  emblaRef: EmblaViewportRefType;
 }
 
 const GalleryItemCarousel = ({ emblaRef }: GalleryItemCarouselProps) => {
