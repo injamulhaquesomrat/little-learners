@@ -1,4 +1,5 @@
 import AdmissionProcess from "@/components/Admissions/AdmissionProcess/AdmissionProcess";
+import FeeStructure from "@/components/Admissions/FeeStructure/FeeStructure";
 import Container from "@/components/shared/Container";
 import PageHero from "@/components/shared/PageHero";
 
@@ -13,6 +14,7 @@ const Admissions = () => {
         }
       />
       <AdmissionProcess />
+      <FeeStructure />
     </Container>
   );
 };

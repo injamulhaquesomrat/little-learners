@@ -1,0 +1,23 @@
+/* Scrollbar width */
+.fee-structure ::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+/* Track (background of scrollbar) */
+.fee-structure ::-webkit-scrollbar-track {
+  background: var(--grey-15);
+  border-radius: 10px;
+}
+
+/* Handle (draggable part) */
+.fee-structure ::-webkit-scrollbar-thumb {
+  background: var(--orange-70);
+  border-radius: 10px;
+  min-height: 30px;
+}
+
+/* Handle on hover */
+.fee-structure ::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-75);
+}

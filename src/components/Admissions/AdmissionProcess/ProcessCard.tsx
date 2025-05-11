@@ -45,7 +45,7 @@ const ProcessCard = ({ process }: { process: admissionProcessTypes }) => {
       >
         <div className="w-9 bg-black h-[2px] "></div>
       </div>
-      {/* end::process number card */}
+      {/* end ::process number card */}
     </div>
   );
 };
