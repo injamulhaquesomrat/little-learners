@@ -61,7 +61,7 @@ export const FormSelectComponent = ({
               <SelectGroup>
                 {options.map((option) => (
                   <SelectItem
-                    className="w-full h-16 xl:h-18 3xl:h-[90px] font-medium text-[var(--grey-35)] text-base 3xl:text-xl bg-secondary-background hover:bg-background cursor-pointer"
+                    className="w-full h-16 xl:h-18 3xl:h-[90px] font-medium text-[var(--grey-35)] text-base 3xl:text-xl bg-secondary-background hover:bg-[var(--orange-80)] cursor-pointer border-1"
                     key={option.value}
                     value={option.value}
                   >

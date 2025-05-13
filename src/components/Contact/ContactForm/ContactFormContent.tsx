@@ -8,6 +8,8 @@ import { FormSelectComponent } from "@/components/shared/ContactSelectConponent"
 import { FormTextareaComponent } from "@/components/shared/FormTextareaComponent";
 import { FormRow } from "@/components/shared/FormRow";
 import { contactFormSchema } from "@/schemas/contactFormSchema";
+import { socialItems } from "@/fakedata/socialItems";
+import { Link } from "react-router";
 
 const ContactFormContent = () => {
   const form = useForm<z.infer<typeof contactFormSchema>>({
@@ -27,7 +29,20 @@ const ContactFormContent = () => {
     console.log(values);
   }
   return (
-    <div className="p-6 pb-[30px] xs:p-[30px] lg:p-10 xl:p-20 3xl:p-[100px] bg-white border-2 border-border shadow-light-shadow rounded-[10px]">
+    <div className="p-6 pt-16 pb-[30px] xs:p-[30px] xs:pt-16 lg:p-10 xl:p-20 3xl:p-[100px] bg-white border-2 border-border shadow-light-shadow rounded-[10px] relative">
+      <ul className="flex gap-5 xl:gap-3.5 absolute -top-[24px] 3xl:-top-8 left-1/2 -translate-x-1/2">
+        {socialItems.map((item) => (
+          <Link to={item?.link} key={item?.id}>
+            <li className="h-[58px] lg:h-12 3xl:h-[74px] w-[74px] md:w-20 xl:w-32 3xl:w-[154px] flex justify-center items-center bg-foreground rounded border-2 border-border">
+              <img
+                className="xl:size-6 3xl:size-8.5"
+                src={item?.icon}
+                alt={item?.name}
+              />
+            </li>
+          </Link>
+        ))}
+      </ul>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
@@ -81,11 +96,12 @@ const ContactFormContent = () => {
               label="Program of Interest"
               placeholder="Select a program"
               options={[
-                { label: "Apple", value: "apple" },
-                { label: "Banana", value: "banana" },
-                { label: "Blueberry", value: "blueberry" },
-                { label: "Grapes", value: "grapes" },
-                { label: "Pineapple", value: "pineapple" },
+                { label: "Language Arts", value: "language arts" },
+                { label: "Mathematics", value: "mathematics" },
+                { label: "Science", value: "science" },
+                { label: "Social Studies", value: "social studies" },
+                { label: "Arts and Crafts", value: "Arts and Crafts" },
+                { label: "Physical Education", value: "Physical Education" },
               ]}
             />
           </FormRow>
