@@ -1,6 +1,6 @@
-import SubjectsContent from "@/components/Academics/Subjects/SubjectsContent";
 import SectionHeading from "@/components/shared/SectionHeading";
 import SectionLayout from "@/components/shared/SectionLayout";
+import EventsNCelebrationsContent from "./EventsNCelebrationsContent";
 
 const EventsNCelebrations = () => {
   return (
@@ -14,7 +14,7 @@ const EventsNCelebrations = () => {
       {/* end::section heading */}
 
       {/* start::events n celebbrations content */}
-      <SubjectsContent />
+      <EventsNCelebrationsContent />
       {/* end::events n celebbrations content */}
     </SectionLayout>
   );

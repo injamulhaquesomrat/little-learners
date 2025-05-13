@@ -1,6 +1,6 @@
-import BenefitsContent from "@/components/Homepage/Benefits/BenefitsContent";
 import SectionHeading from "@/components/shared/SectionHeading";
 import SectionLayout from "@/components/shared/SectionLayout";
+import ExtraCurricularContent from "./ExtraCurricularContent";
 
 const ExtraCurricularActivities = () => {
   return (
@@ -14,7 +14,7 @@ const ExtraCurricularActivities = () => {
       {/* end::section heading */}
 
       {/* start::extracurricular content */}
-      <BenefitsContent />
+      <ExtraCurricularContent />
       {/* end::extracurricular content */}
     </SectionLayout>
   );

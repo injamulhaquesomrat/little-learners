@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const ContactInfo = () => {
   return (
     <>
-      <ul className="grid sm:grid-cols-2 md:grid-cols-3 sm:justify-center lg:justify-start 3xl:flex-col gap-5 pt-10 3xl:text-xl">
+      <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 sm:justify-center lg:justify-start gap-5 pt-10 3xl:text-xl">
         {contactInfoItems.slice(0, 3).map((item) => (
           <li className="w-fit" key={item?.id}>
             <Link to={item?.link}>

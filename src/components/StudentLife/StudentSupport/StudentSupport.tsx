@@ -1,6 +1,6 @@
-import BenefitsContent from "@/components/Homepage/Benefits/BenefitsContent";
 import SectionHeading from "@/components/shared/SectionHeading";
 import SectionLayout from "@/components/shared/SectionLayout";
+import StudentSupportContent from "./StudentSupportContent";
 
 const StudentSupport = () => {
   return (
@@ -14,7 +14,7 @@ const StudentSupport = () => {
       {/* end::section heading */}
 
       {/* start::events n celebbrations content */}
-      <BenefitsContent />
+      <StudentSupportContent />
       {/* end::events n celebbrations content */}
     </SectionLayout>
   );
