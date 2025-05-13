@@ -27,9 +27,12 @@ const ContactFormContent = () => {
     console.log(values);
   }
   return (
-    <div className="p-[30px] bg-white border-2 border-border shadow-light-shadow rounded-[10px]">
+    <div className="p-6 pb-[30px] xs:p-[30px] lg:p-10 xl:p-20 3xl:p-[100px] bg-white border-2 border-border shadow-light-shadow rounded-[10px]">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-[30px]">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-[30px] xl:space-y-10 3xl:space-y-[50px]"
+        >
           {/* start::parent name and email */}
           <FormRow>
             <FormFieldComponent
@@ -101,7 +104,7 @@ const ContactFormContent = () => {
           <Button
             type="submit"
             variant={"noShadow"}
-            className="w-full cursor-pointer text-lg font-medium text-border bg-[var(--orange-75)] h-15"
+            className="w-full cursor-pointer text-lg xl:text-xl 3xl:text-2xl font-medium text-border bg-[var(--orange-75)] hover:bg-main transition-all duration-300 ease-in-out h-15 xl:h-20 3xl:h-24 rounded-xl"
           >
             Submit
           </Button>

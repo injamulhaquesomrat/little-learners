@@ -36,14 +36,14 @@ export const FormTextareaComponent = ({
       control={control}
       name={name}
       render={({ field }) => (
-        <FormItem>
-          <FormLabel className="text-xl text-[#4C4C4C] font-semibold">
+        <FormItem className="gap-2.5 xl:gap-3.5 3xl:gap-5">
+          <FormLabel className="text-xl 3xl:text-[22px] text-[#4C4C4C] font-semibold">
             {label}
           </FormLabel>
           <FormControl>
             <Textarea
               placeholder={placeholder}
-              className="p-5 font-medium text-[var(--grey-35)] placeholder:text-[var(--grey-35)] min-h-40 leading-[1.5]"
+              className="p-5 xl:p-6 3xl:p-[30px] font-medium text-[var(--grey-35)] placeholder:text-[var(--grey-35)] 3xl:text-xl min-h-40 leading-[1.5]"
               rows={rows}
               {...field}
             />
