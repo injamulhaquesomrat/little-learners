@@ -10,7 +10,7 @@ const HeroContactInfo = () => {
             <Link to={item?.link}>
               <div className="flex items-center gap-2 border-2 border-border px-3.5 py-4 rounded-[10px] bg-background">
                 <div className="h-8 w-8 3xl:h-10 3xl:w-10 bg-foreground rounded border-2 border-border flex justify-center items-center">
-                  <img src={item?.logo} alt={item?.name} />
+                  <img className="size-5" src={item?.logo} alt={item?.name} />
                 </div>
                 <div>{item?.contactText}</div>
               </div>
