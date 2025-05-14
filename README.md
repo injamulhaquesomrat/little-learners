@@ -87,8 +87,7 @@ The `Homepage.tsx` is composed of several well-defined UI components for an enga
 
 To get started locally with this project:
 
-```
-bash
+```bash
 # Clone the repository
 git clone https://github.com/injamulhaquesomrat/little-learners
 cd little-learners
@@ -109,6 +108,7 @@ npm run build
 
 ## 📌 Key Files and Directories
 
+```bash
 src/
 │
 ├── main.tsx                    # Entry point of the React application
@@ -126,14 +126,14 @@ src/
 │   └── Homepage/
 │       └── Hero.tsx            # Hero section component for the homepage
 └── index.html                  # Base HTML file
-
+```
 ---
 
 ## 🛠️ Technologies Used
 
 - **React (with TypeScript)**
 
-_ **React Router for client-side routing**
+- **React Router for client-side routing**
 
 - **CountUp.js for animated counters**
 
