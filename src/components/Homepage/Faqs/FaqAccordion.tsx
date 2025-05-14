@@ -33,7 +33,7 @@ const FaqAccordion = ({
             onClick={() => toggleAccordion(faq?.id)}
             className="p-0 bg-secondary-background data-[state=open]:bg-white data-[state=open]:pb-5 gap-5 cursor-pointer"
           >
-            <span className="text-lg font-semibold text-[var(--grey-15)]">
+            <span className="text-lg font-semibold text-text-secondary">
               {faq?.question}
             </span>
             <div className="h-8 w-8 3xl:h-10 3xl:w-10 flex items-center justify-center rounded-sm border-2 border-border p-1.5 bg-background">

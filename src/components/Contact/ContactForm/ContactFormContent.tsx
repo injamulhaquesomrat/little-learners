@@ -120,7 +120,7 @@ const ContactFormContent = () => {
           <Button
             type="submit"
             variant={"noShadow"}
-            className="w-full cursor-pointer text-lg xl:text-xl 3xl:text-2xl font-medium text-border bg-[var(--orange-75)] hover:bg-main transition-all duration-300 ease-in-out h-15 xl:h-20 3xl:h-24 rounded-xl"
+            className="w-full cursor-pointer text-lg xl:text-xl 3xl:text-2xl font-medium text-border bg-navlink hover:bg-main transition-all duration-300 ease-in-out h-15 xl:h-20 3xl:h-24 rounded-xl"
           >
             Submit
           </Button>

@@ -13,7 +13,7 @@ const NTPCard = ({ ntp }: { ntp: ntpType }) => {
   return (
     <Card className="text-center shadow-light-shadow p-10 xl:p-[60px] 3xl:p-20  gap-0 bg-white justify-between">
       <CardHeader className="p-0">
-        <CardTitle className="text-[var(--grey-10)] text-[28px] md:text-3xl xl:text-[34px] 3xl:text-5xl font-bold font-raleway leading-[1.3] pb-5 xl:pb-6 3xl:pb-[30px]">
+        <CardTitle className="text-text-primary text-[28px] md:text-3xl xl:text-[34px] 3xl:text-5xl font-bold font-raleway leading-[1.3] pb-5 xl:pb-6 3xl:pb-[30px]">
           {ntp?.title}
         </CardTitle>
         <img
@@ -22,12 +22,12 @@ const NTPCard = ({ ntp }: { ntp: ntpType }) => {
           alt="breaker line"
         />
       </CardHeader>
-      <CardContent className="font-medium text-[var(--grey-30)] 3xl:text-xl leading-[1.5] p-0 pt-[30px] pb-10 xl:pt-10 xl:pb-[60px]">
+      <CardContent className="font-medium text-text-light 3xl:text-xl leading-[1.5] p-0 pt-[30px] pb-10 xl:pt-10 xl:pb-[60px]">
         {ntp?.description}
       </CardContent>
       <Link to={ntp?.link}>
         <CardAction className="flex justify-center items-center w-full px-0">
-          <Button className="w-full py-4 xl:py-[18px] bg-foreground text-[var(--grey-20)] text-base xl:text-lg 3xl:text-xl font-medium flex items-center gap-2.5 leading-[1.25] cursor-pointer shadow-light-shadow">
+          <Button className="w-full py-4 xl:py-[18px] bg-foreground text-text-muted text-base xl:text-lg 3xl:text-xl font-medium flex items-center gap-2.5 leading-[1.25] cursor-pointer shadow-light-shadow">
             <span>Learn More</span>{" "}
             <svg
               className=""

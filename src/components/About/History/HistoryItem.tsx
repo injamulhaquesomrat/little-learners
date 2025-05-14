@@ -15,8 +15,8 @@ const HistoryItem = ({ item }: { item: historyTypes }) => {
           src="/assets/icons/history/circle-ring.svg"
           alt="circle ring"
         />
-        <div className="pt-1.5 px-1 bg-[var(--orange-80)] absolute -left-8">
-          <hr className="w-4 border-t-2 pt-1 bg-[var(--orange-80)]" />
+        <div className="pt-1.5 px-1 bg-highlight absolute -left-8">
+          <hr className="w-4 border-t-2 pt-1 bg-highlight" />
         </div>
         {/* end::horizontal line with both side circle ring */}
 
@@ -25,7 +25,7 @@ const HistoryItem = ({ item }: { item: historyTypes }) => {
           src="/assets/icons/history/square-bricks.svg"
           alt="square bricks"
         />
-        <h3 className="text-[38px] xl:text-5xl 3xl:text-[68px] font-bold font-raleway leading-snug text-[var(--grey-10)]">
+        <h3 className="text-[38px] xl:text-5xl 3xl:text-[68px] font-bold font-raleway leading-snug text-text-primary">
           {item?.year}
         </h3>
         {/* end::year card text*/}
@@ -34,7 +34,7 @@ const HistoryItem = ({ item }: { item: historyTypes }) => {
       <div
         className={`absolute top-[50px] md:top-[85px] lg:top-[70px] xl:top-[63px] ${
           item?.id === 4 ? "h-0" : "h-[114%] md:h-[124%] xl:h-[160%]"
-        } -left-10 pl-1.5 pr-1 bg-[var(--orange-80)]`}
+        } -left-10 pl-1.5 pr-1 bg-highlight`}
       >
         <svg
           className="h-full w-0.5"
@@ -49,10 +49,10 @@ const HistoryItem = ({ item }: { item: historyTypes }) => {
 
       {/* start::history text content */}
       <div className="md:w-4/6 lg:w-6/8 xl:w-9/12">
-        <h5 className="text-[22px] xl:text-2xl 3xl:text-[28px] font-bold font-raleway leading-snug pb-3 text-[var(--grey-10)]">
+        <h5 className="text-[22px] xl:text-2xl 3xl:text-[28px] font-bold font-raleway leading-snug pb-3 text-text-primary">
           {item?.headline}
         </h5>
-        <p className="font-medium 3xl:text-xl text-[var(--grey-20)]">
+        <p className="font-medium 3xl:text-xl text-text-muted">
           {item?.description}
         </p>
       </div>

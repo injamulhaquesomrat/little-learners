@@ -11,7 +11,7 @@ const StarRating: React.FC<StarRatingProps> = ({ rating, maxStars = 5 }) => {
         stars.push(
           <span
             key={i}
-            className="text-[var(--orange-65)] fill:text-[var(--orange-65)]"
+            className="text-main fill:text-main"
           >
             <svg
               width="16"
@@ -31,7 +31,7 @@ const StarRating: React.FC<StarRatingProps> = ({ rating, maxStars = 5 }) => {
         stars.push(
           <span
             key={i}
-            className="text-[var(--orange-65)] fill:text-[var(--orange-65)]"
+            className="text-main fill:text-main"
           >
             <svg
               width="16"

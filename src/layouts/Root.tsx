@@ -4,7 +4,7 @@ import { Outlet } from "react-router";
 
 const Root = () => {
   return (
-    <div className="bg-background font-outfit text-[var(--grey-20)]">
+    <div className="bg-background font-outfit text-text-muted">
       <Navbar />
       <Outlet />
       <Footer />

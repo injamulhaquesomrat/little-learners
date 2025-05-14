@@ -49,7 +49,7 @@ export const FormFieldComponent = ({
           </FormLabel>
           <FormControl>
             <Input
-              className="p-5 xl:p-6 3xl:p-[30px] font-medium text-[var(--grey-35)] placeholder:text-[var(--grey-35)] 3xl:text-xl h-16 xl:h-18 3xl:h-[90px] leading-[1.5]"
+              className="p-5 xl:p-6 3xl:p-[30px] font-medium text-text-placeholder placeholder:text-text-placeholder 3xl:text-xl h-16 xl:h-18 3xl:h-[90px] leading-[1.5]"
               placeholder={placeholder}
               {...field}
             />

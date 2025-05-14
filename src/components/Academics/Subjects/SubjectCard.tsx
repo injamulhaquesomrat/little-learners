@@ -23,11 +23,11 @@ const SubjectCard = ({ subject }: { subject: subjectTypes }) => {
       {/* start::card content */}
       <div className="grid gap-2.5 xl:gap-3.5 3xl:gap-5">
         <CardHeader className="p-0 text-center gap-0">
-          <CardTitle className="text-[22px] xl:text-2xl 3xl:text-[28px] font-bold font-raleway leading-[1.3] text-[var(--grey-10)]">
+          <CardTitle className="text-[22px] xl:text-2xl 3xl:text-[28px] font-bold font-raleway leading-[1.3] text-text-primary">
             {subject?.title}
           </CardTitle>
         </CardHeader>
-        <CardDescription className="p-0 text-center text-[var(--grey-30)] font-medium 3xl:text-xl">
+        <CardDescription className="p-0 text-center text-text-light font-medium 3xl:text-xl">
           {subject?.description}
         </CardDescription>
       </div>

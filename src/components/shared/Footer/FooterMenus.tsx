@@ -7,7 +7,7 @@ const FooterMenus = () => {
       {footerNavItems.map((footerItem) => (
         <ul
           key={footerItem?.id}
-          className="flex flex-col gap-3.5 font-medium text-[var(--grey-20)] 3xl:text-xl"
+          className="flex flex-col gap-3.5 font-medium text-text-muted 3xl:text-xl"
         >
           <li className="font-semibold pb-2.5">{footerItem?.heading}</li>
           {footerItem?.links.map((link) => (

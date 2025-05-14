@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="lg:col-span-4 3xl:col-span-3">
             <div className="flex flex-col items-center justify-center text-center lg:items-start lg:text-left">
               <Logo />
-              <p className="pt-4 text-[var(--grey-30)] 3xl:text-xl">
+              <p className="pt-4 text-text-light 3xl:text-xl">
                 We believe in the power of play to foster creativity,
                 problem-solving skills, and imagination.
               </p>

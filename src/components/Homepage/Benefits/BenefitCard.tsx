@@ -18,10 +18,10 @@ const BenefitCard = ({ item }: { item: benefitTypes }) => {
       </div>
       <Card className="p-[30px] pt-[50px] pr-10 xl:p-10 xl:pt-[60px] h-full bg-white">
         <CardHeader className="px-0 gap-4 3xl:gap-5">
-          <CardTitle className="text-[var(--grey-10)] text-[22px] xl:text-2xl 3xl:text-[28px] font-bold font-raleway leading-[1.3]">
+          <CardTitle className="text-text-primary text-[22px] xl:text-2xl 3xl:text-[28px] font-bold font-raleway leading-[1.3]">
             {item?.title}
           </CardTitle>
-          <CardDescription className="text-[var(--grey-40)] text-base 3xl:text-xl">
+          <CardDescription className="text-text-disabled text-base 3xl:text-xl">
             {item?.description}
           </CardDescription>
         </CardHeader>

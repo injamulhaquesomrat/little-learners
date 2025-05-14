@@ -28,7 +28,7 @@ const ResponsiveMenus = ({
         <NavLink
           to={"/contact"}
           onClick={() => setOpen(!open)}
-          className="py-[21px] 3xl:py-[25px] px-5 3xl:px-[34px] 3xl:text-xl bg-[var(--orange-75)]"
+          className="py-[21px] 3xl:py-[25px] px-5 3xl:px-[34px] 3xl:text-xl bg-navlink"
         >
           Contact
         </NavLink>

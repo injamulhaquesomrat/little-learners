@@ -21,7 +21,7 @@ const Menus = () => {
       ))}
       <NavLink
         to={"/contact"}
-        className="lg:py-[21px] 3xl:py-[25px] lg:px-[30px] 3xl:px-[34px] border-l-2 3xl:text-xl bg-[var(--orange-75)]"
+        className="lg:py-[21px] 3xl:py-[25px] lg:px-[30px] 3xl:px-[34px] border-l-2 3xl:text-xl bg-navlink"
       >
         Contact
       </NavLink>

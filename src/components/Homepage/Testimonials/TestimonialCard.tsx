@@ -12,7 +12,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: TestimonialType }) => {
             src={testimonial?.image}
             alt={testimonial?.name}
           />
-          <h4 className="text-xl font-semibold text-[var(--grey-20)] leading-[1.5]">
+          <h4 className="text-xl font-semibold text-text-muted leading-[1.5]">
             {testimonial?.name}
           </h4>
         </div>
@@ -22,7 +22,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: TestimonialType }) => {
         </div>
 
         <div>
-          <blockquote className="text-[var(--grey-20)] font-medium leading-[1.5] 3xl:text-xl">
+          <blockquote className="text-text-muted font-medium leading-[1.5] 3xl:text-xl">
             {testimonial?.feedback}
           </blockquote>
         </div>

@@ -17,7 +17,7 @@ const TeamCard = ({ team }: { team: teacherTeamTypes }) => {
             alt="ms. sarah anderson"
           />
         </div>
-        <CardTitle className="text-xl xl:text-2xl 3xl:text-[30px] font-raleway font-extrabold text-[var(--grey-20)]">
+        <CardTitle className="text-xl xl:text-2xl 3xl:text-[30px] font-raleway font-extrabold text-text-muted">
           {team?.name}
         </CardTitle>
         <Link
@@ -30,7 +30,7 @@ const TeamCard = ({ team }: { team: teacherTeamTypes }) => {
       {/* end::card header */}
 
       {/* start::card content */}
-      <CardContent className="text-[var(--grey-20)] xl:text-xl  border-2 border-border bg-background p-5 xl:p-6 3xl:p-[30px] rounded-[10px]">
+      <CardContent className="text-text-muted xl:text-xl  border-2 border-border bg-background p-5 xl:p-6 3xl:p-[30px] rounded-[10px]">
         <h6 className="text-xl 3xl:text-2xl leading-[1.5] pb-3 font-semibold">
           {team?.headline}
         </h6>
