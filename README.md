@@ -1,8 +1,8 @@
-# Little Learners Academy Website
+# Little Learners Website
 
-Welcome to the **Little Learners Academy** website repository — a comprehensive React-based online platform for a kindergarten/preschool educational institution. This project serves as the digital face of the academy, designed to provide essential information and interactive functionality for prospective and current families, staff, and community members.
+Welcome to the **Little Learners** website repository — a comprehensive React-based online platform for a kindergarten/preschool educational institution. This project serves as the digital face of the academy, designed to provide essential information and interactive functionality for prospective and current families, staff, and community members.
 
-🔗 **Live Website:** [https://www.littlelearnersacademy.com](https://www.littlelearnersacademy.com)
+🔗 **Live Website:** [https://little-learners-inj.netlify.app](https://little-learners-inj.netlify.app)
 
 ---
 
@@ -101,7 +101,7 @@ npm run dev
 # Go to this livesite
 🔗 **Local Website:** [http://localhost:5173](http://localhost:5173)
 
-# Build the project 
+# Build the project
 npm run build
 
 ---
