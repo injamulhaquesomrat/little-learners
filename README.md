@@ -2,6 +2,8 @@
 
 Welcome to the **Little Learners Academy** website repository — a comprehensive React-based online platform for a kindergarten/preschool educational institution. This project serves as the digital face of the academy, designed to provide essential information and interactive functionality for prospective and current families, staff, and community members.
 
+🔗 **Live Website:** [https://www.littlelearnersacademy.com](https://www.littlelearnersacademy.com)
+
 ---
 
 ## 📌 Purpose and Scope
@@ -45,21 +47,21 @@ The application follows a modular and maintainable structure built with React an
 - `App.tsx`  
   Contains the route hierarchy and layout definitions.
 
-- `Root.tsx` (Root Layout)  
-  - `Navbar`  
-  - `Outlet` for rendering route-specific pages  
+- `Root.tsx` (Root Layout)
+  - `Navbar`
+  - `Outlet` for rendering route-specific pages
   - `Footer`
 
 ### 🧱 Main Content Pages
 
-| Page         | Description                             | Key Components                                      |
-|--------------|-----------------------------------------|-----------------------------------------------------|
-| Homepage     | Intro to school                         | Hero, Benefits, Testimonials, FAQs                  |
-| About        | School’s mission and team               | Mission & Vision, History Timeline, Team            |
-| Academics    | Curriculum and subjects                 | Features, Subjects, Gallery                         |
-| Admissions   | Admission info and fees                 | Admission Process, Fee Structure                    |
-| Student Life | Student activities and programs         | Extracurricular Activities, Events, Student Support |
-| Contact      | Inquiry form                            | Contact Form                                        |
+| Page         | Description                     | Key Components                                      |
+| ------------ | ------------------------------- | --------------------------------------------------- |
+| Homepage     | Intro to school                 | Hero, Benefits, Testimonials, FAQs                  |
+| About        | School’s mission and team       | Mission & Vision, History Timeline, Team            |
+| Academics    | Curriculum and subjects         | Features, Subjects, Gallery                         |
+| Admissions   | Admission info and fees         | Admission Process, Fee Structure                    |
+| Student Life | Student activities and programs | Extracurricular Activities, Events, Student Support |
+| Contact      | Inquiry form                    | Contact Form                                        |
 
 ---
 
@@ -81,9 +83,31 @@ The `Homepage.tsx` is composed of several well-defined UI components for an enga
 
 ---
 
-## 📌 Key Files and Directories
+## ⚙️ Initial Setup
+
+To get started locally with this project:
 
 ```bash
+# Clone the repository
+git clone https://github.com/injamulhaquesomrat/little-learners
+cd little-learners
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Go to this livesite
+🔗 **Local Website:** [http://localhost:5173](http://localhost:5173)
+
+# Build the project 
+npm run build
+
+---
+
+## 📌 Key Files and Directories
+
 src/
 │
 ├── main.tsx                    # Entry point of the React application
@@ -101,3 +125,16 @@ src/
 │   └── Homepage/
 │       └── Hero.tsx            # Hero section component for the homepage
 └── index.html                  # Base HTML file
+
+---
+
+## 🛠️ Technologies Used
+
+- **React (with TypeScript)**
+
+_ **React Router for client-side routing**
+
+- **CountUp.js for animated counters**
+
+- **Modern component structure using props and state for modularity**
+```
