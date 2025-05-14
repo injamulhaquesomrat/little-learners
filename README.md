@@ -28,8 +28,6 @@ The primary users of this platform include:
 - Educators and administrative staff
 - Community members interested in early childhood education
 
-> **Source references**:  
-> `src/components/Homepage/Hero.tsx` lines 21–23, 28–31
 
 ---
 

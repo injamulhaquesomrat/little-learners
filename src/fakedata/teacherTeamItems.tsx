@@ -1,7 +1,8 @@
 export const teacherTeamItems = [
   {
     id: 1,
-    avatarImg: "https://ui-avatars.com/api/?name=F+A",
+    avatarImg:
+      "https://images.unsplash.com/photo-1568822617270-2c1579f8dfe2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVhY2hlcnN8ZW58MHwyfDB8fHwy",
     name: "Fatima Akter",
     email: "fatima.akter@example.com",
     headline: "Early Math & Counting Guide",
@@ -9,7 +10,8 @@ export const teacherTeamItems = [
   },
   {
     id: 2,
-    avatarImg: "https://ui-avatars.com/api/?name=A+R",
+    avatarImg:
+      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZXxlbnwwfDJ8MHx8fDI%3D",
     name: "Abdul Rahman",
     email: "abdul.rahman@example.com",
     headline: "Fun Science & Nature Explorer",
@@ -17,7 +19,8 @@ export const teacherTeamItems = [
   },
   {
     id: 3,
-    avatarImg: "https://ui-avatars.com/api/?name=S+J",
+    avatarImg:
+      "https://images.unsplash.com/photo-1650056200016-70c0cb987ce7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGZhY2V8ZW58MHwyfDB8fHwy",
     name: "Sharmin Jahan",
     email: "sharmin.jahan@example.com",
     headline: "Stories & Imagination Coach",
@@ -25,7 +28,8 @@ export const teacherTeamItems = [
   },
   {
     id: 4,
-    avatarImg: "https://ui-avatars.com/api/?name=R+H",
+    avatarImg:
+      "https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZhY2V8ZW58MHwyfDB8fHwy",
     name: "Rafiq Hasan",
     email: "rafiq.hasan@example.com",
     headline: "Friendly Computer Basics Mentor",
@@ -41,7 +45,8 @@ export const teacherTeamItems = [
   },
   {
     id: 6,
-    avatarImg: "https://ui-avatars.com/api/?name=T+H",
+    avatarImg:
+      "https://images.unsplash.com/photo-1542178243-bc20204b769f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGZhY2UlMjBmcm9tJTIwYmFuZ2xhZGVzaHxlbnwwfDJ8MHx8fDI%3D",
     name: "Tanvir Hossain",
     email: "tanvir.hossain@example.com",
     headline: "Playful Biology & Animal Friend",
