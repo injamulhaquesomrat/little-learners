@@ -1,54 +1,103 @@
-# React + TypeScript + Vite
+# Little Learners Academy Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Little Learners Academy** website repository — a comprehensive React-based online platform for a kindergarten/preschool educational institution. This project serves as the digital face of the academy, designed to provide essential information and interactive functionality for prospective and current families, staff, and community members.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Purpose and Scope
 
-## Expanding the ESLint configuration
+The Little Learners Academy website was created to:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Showcase the school's educational approach and curriculum
+- Provide detailed information about admissions and fee structures
+- Share insights into student life, events, and daily activities
+- Present the school's mission, vision, and staff
+- Offer convenient contact mechanisms for inquiries and support
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 👥 Target Audience
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The primary users of this platform include:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Parents of children aged 2–5 seeking educational options
+- Prospective families evaluating kindergarten institutions
+- Families of currently enrolled students
+- Educators and administrative staff
+- Community members interested in early childhood education
+
+> **Source references**:  
+> `src/components/Homepage/Hero.tsx` lines 21–23, 28–31
+
+---
+
+## 🏗️ Application Structure Overview
+
+The application follows a modular and maintainable structure built with React and React Router. Below is a high-level overview:
+
+### 📁 Entry Point
+
+- `main.tsx`  
+  Initializes the application with `RouterProvider` and injects the routing context.
+
+### 🧭 Router Structure
+
+- `App.tsx`  
+  Contains the route hierarchy and layout definitions.
+
+- `Root.tsx` (Root Layout)  
+  - `Navbar`  
+  - `Outlet` for rendering route-specific pages  
+  - `Footer`
+
+### 🧱 Main Content Pages
+
+| Page         | Description                             | Key Components                                      |
+|--------------|-----------------------------------------|-----------------------------------------------------|
+| Homepage     | Intro to school                         | Hero, Benefits, Testimonials, FAQs                  |
+| About        | School’s mission and team               | Mission & Vision, History Timeline, Team            |
+| Academics    | Curriculum and subjects                 | Features, Subjects, Gallery                         |
+| Admissions   | Admission info and fees                 | Admission Process, Fee Structure                    |
+| Student Life | Student activities and programs         | Extracurricular Activities, Events, Student Support |
+| Contact      | Inquiry form                            | Contact Form                                        |
+
+---
+
+## 🏠 Homepage Structure
+
+The `Homepage.tsx` is composed of several well-defined UI components for an engaging user experience:
+
+- **Hero Section**
+  - Welcome Text
+  - Hero Image
+  - Hall of Fame Counter (`CountUp` component)
+- **Benefits Section**
+- **Testimonials Section**
+- **FAQs Section**
+
+> **Source references**:  
+> `src/pages/Homepage.tsx` lines 8–19  
+> `src/components/Homepage/Hero.tsx`
+
+---
+
+## 📌 Key Files and Directories
+
+```bash
+src/
+│
+├── main.tsx                    # Entry point of the React application
+├── App.tsx                     # Application-wide routing configuration
+├── layouts/
+│   └── Root.tsx                # Root layout with Navbar, Footer, and Outlet
+├── pages/
+│   ├── Homepage.tsx
+│   ├── About.tsx
+│   ├── Academics.tsx
+│   ├── Admissions.tsx
+│   ├── StudentLife.tsx
+│   └── Contact.tsx
+├── components/
+│   └── Homepage/
+│       └── Hero.tsx            # Hero section component for the homepage
+└── index.html                  # Base HTML file
