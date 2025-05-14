@@ -77,10 +77,6 @@ The `Homepage.tsx` is composed of several well-defined UI components for an enga
 - **Testimonials Section**
 - **FAQs Section**
 
-> **Source references**:  
-> `src/pages/Homepage.tsx` lines 8–19  
-> `src/components/Homepage/Hero.tsx`
-
 ---
 
 ## ⚙️ Initial Setup
