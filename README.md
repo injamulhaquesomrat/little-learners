@@ -87,7 +87,8 @@ The `Homepage.tsx` is composed of several well-defined UI components for an enga
 
 To get started locally with this project:
 
-```bash
+```
+bash
 # Clone the repository
 git clone https://github.com/injamulhaquesomrat/little-learners
 cd little-learners
@@ -103,7 +104,7 @@ npm run dev
 
 # Build the project
 npm run build
-
+```
 ---
 
 ## 📌 Key Files and Directories
